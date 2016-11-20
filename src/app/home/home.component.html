@@ -1,0 +1,176 @@
+<div class="row">
+  <div class="col-xs-12 col-md-offset-1 col-md-5">
+    <h2 class="mainHeader" style="margin-bottom:30px;">M & C Perfect Clean</h2>
+    <p class="companyDesc">
+      M & C Perfect Clean provides general and customized cleaning for homes and offices. For over 5 years we have been providing professional and affordable services to our customers. We offer services
+      <span class="typesServices">weekly</span>,
+      <span class="typesServices">bi-weekly</span>,
+      <span class="typesServices">once a month</span>,and
+      <span class="typesServices">one time</span> cleaning services. We provide our own supplies and equipement. We also guarantee the highest quality, if you are unhappy with your cleaning for any reason, let us know and we'll re-clean of charge.
+    </p>
+    <p class="motto">
+      <span class="typesServices">"</span>Our goal is to <span class="typesServices">service</span> you<span class="typesServices">"</span>
+    </p>
+    <p class="companyDesc">
+      We are currently serving the following cities:
+      <span class="typesServices">Indianapolis</span>,
+      <span class="typesServices"> Carmel</span>,
+      <span class="typesServices"> Noblesville</span>,
+      <span class="typesServices"> Westfield</span>,
+      <span class="typesServices"> Cicero</span>,
+      <span class="typesServices"> Fishers</span>, and
+      <span class="typesServices"> Zionsville</span>.
+    </p>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <div style="padding-bottom:50px;" class="visible-xs visible-sm"></div>
+    <div class="row">
+      <div class="col-xs-12 col-md-offset-2 col-md-8">
+        <md-toolbar color="primary">Free Estimate</md-toolbar>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-offset-2 col-md-8">
+        <form class="contact-form" method="post" action="email.php" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-5">
+              <md-input #FName name="FName" [(ngModel)]="message.FName" ngControl="FName" class="demo-full-width" maxlength="15" style="width: 100%" placeholder="First Name" required>
+                <md-hint align="end">{{FName.characterCount}} / 15</md-hint>
+              </md-input>
+            </div>
+            <div class="col-xs-5">
+              <md-input #LName name="LName" [(ngModel)]="message.LName" ngControl="LName" class="demo-full-width" maxlength="15" style="width: 100%" placeholder="Last Name" required>
+                <md-hint align="end">{{LName.characterCount}} / 15</md-hint>
+              </md-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-5">
+              <md-input #PNumber name="PNumber" [(ngModel)]="message.PNumber" ngControl="PNumber" class="demo-full-width" maxlength="14" style="width: 100%" placeholder="Phone Number" required >
+                <md-hint align="end">{{PNumber.characterCount}} / 14</md-hint>
+              </md-input>
+            </div>
+            <div class="col-xs-5">
+              <md-input #Email name="Email" [(ngModel)]="message.Email" ngControl="Email" class="demo-full-width" maxlength="30" style="width: 100%" type="email" placeholder="Email" required>
+                <md-hint align="end">{{Email.characterCount}} / 30</md-hint>
+              </md-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-7">
+              <md-input #Addr1 name="Addr1" [(ngModel)]="message.Addr1" ngControl="Addr1" class="demo-full-width" style="width: 100%" type="text" placeholder="Address" required>
+                <md-hint align="end">{{Addr1.characterCount}}</md-hint>
+              </md-input>
+            </div>
+            <div class="col-xs-3">
+              <md-input #Addr2 name="Addr2" [(ngModel)]="message.Addr2" ngControl="Addr2" class="demo-full-width" maxlength="10" style="width: 100%" type="text" placeholder="Apt, suite, etc">
+                <md-hint align="end">{{Addr2.characterCount}} / 10</md-hint>
+              </md-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-5">
+              <md-input #City name="City" [(ngModel)]="message.City" ngControl="City" class="demo-full-width" style="width: 100%" type="text" placeholder="City" required>
+                <md-hint align="end">{{City.characterCount}}</md-hint>
+              </md-input>
+            </div>
+            <div class="col-xs-5">
+              <md-input #Zip name="Zip" [(ngModel)]="message.Zip" ngControl="Zip" class="demo-full-width" maxlength="5" style="width: 100%" type="text" placeholder="ZIP Code" required>
+                <md-hint align="end">{{Zip.characterCount}} / 5</md-hint>
+              </md-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10">
+              <md-input #Message name="Message" [(ngModel)]="message.Message" ngControl="Message" class="demo-full-width" style="width: 100%" placeholder="Message">
+                <md-hint align="end">{{Message.characterCount}} </md-hint>
+              </md-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-4">
+              <br />
+              <div class="form-actions">
+                <button type="submit" md-raised-button color="primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="padding-bottom:50px;" class="visible-xs visible-sm">
+
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-offset-1 col-md-6">
+    <h2 style="margin-bottom:50px;">What We Offer:</h2>
+  </div>
+</div>
+<div class="row no-gutter">
+  <div class="col-xs-offset-2 col-md-offset-3 col-xs-8 col-md-3">
+    <md-card style="background-color: #8C489F;" class="home">
+      <md-card-content>
+        <md-card-title class="cleanHeader">Bathrooms</md-card-title>
+        <ul class="cleanList">
+          <li>Bathtubs</li>
+          <li>Showers</li>
+          <li>Vanity</li>
+          <li>Sink</li>
+          <li>Mirrors</li>
+          <li>Floors mopped</li>
+          <li>General dusting</li>
+        </ul>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="col-xs-offset-2 col-md-offset-0 col-xs-8 col-md-3">
+    <md-card style="background-color: #BCCC3E;" class="home">
+      <md-card-content>
+        <md-card-title class="cleanHeader">Kitchen</md-card-title>
+        <ul class="cleanList">
+          <li>Counter tops</li>
+          <li>Outside of cabinets</li>
+          <li>Appliances</li>
+          <li>Vacuum floors </li>
+          <li>Microwave</li>
+          <li>Sinks cleaned</li>
+          <li>General dusting</li>
+        </ul>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
+<div class="row no-gutter">
+  <div class="col-xs-offset-2 col-md-offset-3 col-xs-8 col-md-3">
+    <md-card style="background-color: #FF665B;" class="home">
+      <md-card-content>
+        <md-card-title class="cleanHeader">Living Room</md-card-title>
+        <ul class="cleanList">
+          <li>Picture frames</li>
+          <li>Ceiling fans</li>
+          <li>Floors vacuumed</li>
+          <li>Mopped floors</li>
+          <li>Stairs mopped</li>
+          <li>Flat areas wiped</li>
+        </ul>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="col-xs-offset-2 col-md-offset-0 col-xs-8 col-md-3">
+    <md-card style="background-color: #4EB29A;" class="home">
+      <md-card-content>
+        <md-card-title class="cleanHeader">Extra Fee</md-card-title>
+        <ul class="cleanList">
+          <li>Inside fridge</li>
+          <li>Oven</li>
+          <li>Wash dishes</li>
+          <li>Windows</li>
+          <li>Wash clothes</li>
+          <li>Baseboard clean</li>
+        </ul>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

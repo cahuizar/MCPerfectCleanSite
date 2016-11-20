@@ -1,0 +1,63 @@
+<div style="padding-top:50px" class="hidden-xs"></div>
+<div style="padding-top:20px" class="visible-xs"></div>
+<div class="row">
+  <div class="col-xs-12 col-md-offset-2 col-md-8">
+    <md-toolbar color="primary">Contact Us</md-toolbar>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-offset-2 col-md-8">
+  <form class="contact-form" method="post" action="email_contact.php" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class=" col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
+        <p>Fill out the form below to contact us with any question or concern,
+           we will be sure to answer it as soon as we can.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <md-input #FName name="FName" [(ngModel)]="message.FName" ngControl="FName" class="demo-full-width" maxlength="15" style="width: 100%"  placeholder="First Name" required>
+          <md-hint align="end">{{FName.characterCount}} / 15</md-hint>
+        </md-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <md-input #LName name="LName" [(ngModel)]="message.LName" ngControl="LName" class="demo-full-width" maxlength="15" style="width: 100%"  placeholder="Last Name" required>
+          <md-hint align="end">{{LName.characterCount}} / 15</md-hint>
+        </md-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <md-input #PNumber name="PNumber" [(ngModel)]="message.PNumber" ngControl="PNumber" class="demo-full-width" maxlength="14" style="width: 100%"  placeholder="Phone Number: 1-xxx-xxx-xxxx" required>
+          <md-hint align="end">{{PNumber.characterCount}} / 14</md-hint>
+        </md-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <md-input #Email name="Email" [(ngModel)]="message.Email" ngControl="Email" class="demo-full-width" maxlength="30" style="width: 100%" type="email"  placeholder="Email" required>
+          <md-hint align="end">{{Email.characterCount}} / 30</md-hint>
+        </md-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <md-input #Message name="Message" [(ngModel)]="message.Message" ngControl="Message" class="demo-full-width"  style="width: 100%"  placeholder="Message" required>
+          <md-hint align="end">{{Message.characterCount}}</md-hint>
+        </md-input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <br />
+        <button type="submit" md-raised-button color="primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div style="padding-top:50px" class="visible-xs"></div>
+  <div style="padding-top:80px" class="hidden-xs"></div>
+</div>
+</div>
